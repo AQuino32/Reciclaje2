@@ -66,7 +66,7 @@ public class cuarto extends Fragment {
         Button buttonReciclaje = view.findViewById(R.id.buttonReciclaje);
         Button buttonTresR = view.findViewById(R.id.buttonTresR);
         Button buttonBeneficiosReciclar = view.findViewById(R.id.buttonBeneficiosReciclar);
-        Button btnCerrarSesion = view.findViewById(R.id.btnCerrarSesion); // El botón para cerrar sesión
+      // El botón para cerrar sesión
 
         // Configuración de los listeners
         buttonReciclaje.setOnClickListener(v -> toggleReciclaje(view));
@@ -74,7 +74,6 @@ public class cuarto extends Fragment {
         buttonBeneficiosReciclar.setOnClickListener(v -> toggleBeneficiosReciclar(view));
 
         // Listener para el botón de cerrar sesión
-        btnCerrarSesion.setOnClickListener(v -> cerrarSesion());
     }
 
     // Método para alternar la visibilidad de los TextViews
