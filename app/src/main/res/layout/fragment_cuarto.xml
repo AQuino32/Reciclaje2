@@ -105,19 +105,12 @@
                 android:textColor="@color/black"
                 android:visibility="gone" /> <!-- Inicialmente oculto -->
 
-            <Button
-                android:id="@+id/buttonCerrarSesion"
+
+
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/menu"
-                android:text="Cerrar Sesión"
-                android:textAlignment="textStart"
-                android:textColor="@color/black"
-                android:drawableLeft="@drawable/cerrar"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:onClick="cerrar"/>
-
+                android:src="@drawable/noticias"/>
 
 
 
