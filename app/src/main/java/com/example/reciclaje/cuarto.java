@@ -1,9 +1,11 @@
 package com.example.reciclaje;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,4 +63,19 @@ public class cuarto extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_cuarto, container, false);
     }
-}
+
+    public void cerrar(View view) {
+        // Verifica que la actividad esté disponible
+        if (getActivity() != null) {
+            // Inicia la actividad Login
+            Intent intent = new Intent(getActivity(), login.class);
+            startActivity(intent);
+
+            // Si deseas cerrar la actividad actual, asegúrate de hacerlo de manera segura
+            getActivity().finish();
+        } else {
+            // Si getActivity() es null, puedes manejarlo de otra manera (por ejemplo, loguear el error o hacer algo diferente)
+            Log.e("Cerrar", "La actividad no está disponible.");
+        }
+    }
+    }
